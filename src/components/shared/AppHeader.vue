@@ -77,7 +77,7 @@ export default {
 <template>
 	<nav id="nav" class="sm:container sm:mx-auto">
 		<!-- Header start -->
-		<div class="z-10 max-w-screen-lg xl:max-w-screen-2xl block sm:flex sm:justify-between sm:items-center my-6">
+		<div class="z-10 max-w-screen-lg xl:max-w-screen-2xl block sm:flex sm:justify-between sm:items-center my-6 md:mx-3 xl:mx-0">
 			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
 				<!-- Header logos -->
@@ -89,8 +89,8 @@ export default {
 				</div>
 
 				<!-- Theme switcher small screen -->
-				<theme-switcher :theme="theme" @themeChanged="updateTheme"
-					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg" />
+				<!-- <theme-switcher :theme="theme" @themeChanged="updateTheme"
+					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg" /> -->
 
 				<!-- Small screen hamburger menu -->
 				<div class="sm:hidden">
@@ -112,17 +112,17 @@ export default {
 			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
 
 			<!-- Header right section buttons -->
-			<div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
+			<div class="sm:flex justify-between items-center flex-col md:flex-row">
 				<!-- Hire me button -->
 				<div class="hidden md:block">
-					<Button title="Hire Me"
+					<Button title="Resume"
 						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()" aria-label="Hire Me Button" />
 				</div>
 
 				<!-- Theme switcher large screen -->
-				<theme-switcher :theme="theme" @themeChanged="updateTheme"
-					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer" />
+				<!-- <theme-switcher :theme="theme" @themeChanged="updateTheme"
+					class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer" /> -->
 			</div>
 		</div>
 
