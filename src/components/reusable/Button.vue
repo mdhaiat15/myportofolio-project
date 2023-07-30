@@ -1,12 +1,5 @@
-<script>
-export default {
-    props: ['title'],
-    data: () => {
-        return {
-            //
-        };
-    },
-};
+<script setup>
+const props = defineProps(['title'])
 </script>
 
 <template>

@@ -1,25 +1,36 @@
-<script>
+<script setup>
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader.vue';
 import AppFooter from './components/shared/AppFooter.vue';
+import { onMounted, onUpdated, ref } from 'vue';
 
-export default {
-	components: {
-		AppHeader,
-		AppFooter,
-	},
-	data: () => {
-		return {
-			appTheme: localStorage.getItem('theme'),
-		};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-};
+const appTheme = ref(localStorage.getItem('theme'));
+
+onMounted(() => {
+	feather.replace()
+})
+
+onUpdated(() => {
+	feather.replace();
+})
+
+// export default {
+// 	components: {
+// 		AppHeader,
+// 		AppFooter,
+// 	},
+// 	data: () => {
+// 		return {
+// 			appTheme: localStorage.getItem('theme'),
+// 		};
+// 	},
+// 	mounted() {
+// 		feather.replace();
+// 	},
+// 	updated() {
+// 		feather.replace();
+// 	},
+// };
 </script>
 
 <template>
@@ -28,9 +39,15 @@ export default {
 		<AppHeader />
 
 		<!-- Render active component contents with vue transition -->
-		<transition name="fade" mode="out-in">
+		<!-- <transition name="fade" mode="out-in">
 			<router-view :theme="appTheme" />
-		</transition>
+		</transition> -->
+
+		<router-view v-slot="{ Component }">
+			<transition name="fade" mode="out-in">
+				<component :is="Component" />
+			</transition>
+		</router-view>
 
 		<!-- Scroll to top -->
 		<back-to-top visibleoffset="500" right="30px" bottom="20px" class="shadow-lg">
@@ -51,11 +68,7 @@ export default {
 }
 
 .vue-back-to-top {
-	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
-        duration-500
-        ease-in-out
-        transform
-        hover:-translate-y-1 hover:scale-110;
+	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
 	border-radius: 50%;
 	font-size: 22px;
 	line-height: 22px;
