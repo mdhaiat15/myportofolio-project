@@ -1,8 +1,10 @@
 <script>
-import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 export default {
 	name: 'Projects',
 };
+</script>
+<script setup>
+import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 </script>
 
 <template>
