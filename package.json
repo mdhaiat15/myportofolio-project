@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.4",
-    "core-js": "^3.31.1",
     "feather-icons": "^4.29.0",
-    "node": "^20.5.0",
     "vue": "^3.3.4",
     "vue-backtotop": "^1.6.1",
     "vue-router": "^4.2.4"
