@@ -1,25 +1,16 @@
-<script>
+<script setup>
 import feather from 'feather-icons';
+import { onMounted, onUpdated } from 'vue';
+let theme = localStorage.getItem('theme') || 'light';
 
-export default {
-	name: 'Home',
-	data: () => {
-		return {
-			theme: '',
-		};
-	},
-	created() {
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	mounted() {
-		feather.replace();
-		this.theme = localStorage.getItem('theme') || 'light';
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
+onMounted(() => {
+	feather.replace();
+	theme = localStorage.getItem('theme') || 'light';
+});
+
+onUpdated(() => {
+	feather.replace();
+});
 </script>
 
 <template>

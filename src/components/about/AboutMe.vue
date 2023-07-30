@@ -1,17 +1,11 @@
-<script>
-export default {
-	setup() {
-		return {
-			bios: [
-				{
-					id: 1,
-					bio:
-						'Hello! I am a web developer who is excited about new experiences in project development. Proficient in programming languages like PHP and tools like Framework Laravel, Javascript, Vue JS, Bootstrap, Tailwind CSS, and Database MySql. I am always ready to create engaging and responsive web solutions. Each project is an opportunity for me to learn more and provide exceptional web experiences.',
-				},
-			],
-		};
+<script setup>
+const bios = [
+	{
+		id: 1,
+		bio:
+			'Hello! I am a web developer who is excited about new experiences in project development. Proficient in programming languages like PHP and tools like Framework Laravel, Javascript, Vue JS, Bootstrap, Tailwind CSS, and Database MySql. I am always ready to create engaging and responsive web solutions. Each project is an opportunity for me to learn more and provide exceptional web experiences.',
 	},
-};
+];
 </script>
 
 <template>

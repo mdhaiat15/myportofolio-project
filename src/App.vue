@@ -13,24 +13,6 @@ onMounted(() => {
 onUpdated(() => {
 	feather.replace();
 })
-
-// export default {
-// 	components: {
-// 		AppHeader,
-// 		AppFooter,
-// 	},
-// 	data: () => {
-// 		return {
-// 			appTheme: localStorage.getItem('theme'),
-// 		};
-// 	},
-// 	mounted() {
-// 		feather.replace();
-// 	},
-// 	updated() {
-// 		feather.replace();
-// 	},
-// };
 </script>
 
 <template>
@@ -39,10 +21,6 @@ onUpdated(() => {
 		<AppHeader />
 
 		<!-- Render active component contents with vue transition -->
-		<!-- <transition name="fade" mode="out-in">
-			<router-view :theme="appTheme" />
-		</transition> -->
-
 		<router-view v-slot="{ Component }">
 			<transition name="fade" mode="out-in">
 				<component :is="Component" />

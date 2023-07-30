@@ -1,22 +1,18 @@
-<script>
+<script setup>
 import feather from 'feather-icons';
 import FooterCopyright from './FooterCopyright.vue';
 import { socialLinks } from '../../data/socialLinks.js';
+import { onMounted, onUpdated } from 'vue';
 
-export default {
-	components: { FooterCopyright },
-	data() {
-		return {
-			socials: socialLinks,
-		};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-};
+const socials = socialLinks;
+
+onMounted(() => {
+	feather.replace();
+});
+
+onUpdated(() => {
+	feather.replace();
+});
 </script>
 
 <template>

@@ -1,13 +1,9 @@
-<script>
-export default {
-	data: () => {
-		return {
-			copyrightDate: new Date().getFullYear(),
-			projectName: 'My Portfolio Project',
-			author: 'Haiat',
-		};
-	},
-};
+<script setup>
+import { ref } from 'vue';
+
+const copyrightDate = ref(new Date().getFullYear());
+const projectName = ref('My Portfolio Project');
+const author = ref('Haiat');
 </script>
 
 <template>
