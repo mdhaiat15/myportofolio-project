@@ -13,7 +13,7 @@ const props = defineProps(['showModal', 'isOpen']);
 			class="font-general-medium block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 border-t-2 border-b-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 			aria-label="About Me">About Me</router-link>
 		<div class="flex justify-start sm:hidden">
-			<a href="../../assets/files/Moch. Dzawil Haiat-CV.pdf" target="_blank" download="Moch. Dzawil Haiat-CV.pdf"
+			<a href="/files/Moch-Dzawil-Haiat-CV.pdf" download="Moch. Dzawil Haiat-CV.pdf"
 				class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300">
 				Resume
 			</a>
