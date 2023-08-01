@@ -94,7 +94,8 @@ const showModal = () => {
 			<div class="sm:flex justify-between items-center flex-col md:flex-row">
 				<!-- Resume Button -->
 				<div class="hidden sm:block">
-					<a href="../../assets/files/Moch. Dzawil Haiat-CV.pdf"
+					<a href="../../assets/files/Moch. Dzawil Haiat-CV.pdf" target="_blank"
+						download="Moch. Dzawil Haiat-CV.pdf"
 						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300">
 						Resume
 					</a>
