@@ -1,1 +1,0 @@
-import{o as e,c as t,g as s,_ as a}from"./index-8b79a372.js";const c={class:"container mx-auto"},o={name:"Projects"},m=Object.assign(o,{setup(_){return(n,r)=>(e(),t("div",c,[s(a)]))}});export{m as default};
