@@ -4,7 +4,7 @@ export default {
 };
 </script>
 <script setup>
-import AboutMe from '@/components/about/AboutMe.vue';
+import AboutMe from '../components/about/AboutMe.vue';
 import feather from 'feather-icons';
 import { onMounted, onUpdated } from 'vue';
 
