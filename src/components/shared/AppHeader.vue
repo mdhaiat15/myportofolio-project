@@ -13,11 +13,11 @@ const categories = [
 		value: 'web',
 		name: 'Web Application',
 	},
-	// {
-	// 	id: 2,
-	// 	value: 'mobile',
-	// 	name: 'Mobile Application',
-	// },
+	{
+		id: 2,
+		value: 'company profile',
+		name: 'Company Profile',
+	},
 	// {
 	// 	id: 3,
 	// 	value: 'ui-ux',

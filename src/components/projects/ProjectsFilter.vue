@@ -10,7 +10,7 @@ const props = defineProps({
 		type: Array,
 		default: () => [
 			'Web Application',
-			// 'Mobile Application',
+			'Company Profile',
 			// 'UI/UX Design',
 			// 'Branding & Anim',
 		],
