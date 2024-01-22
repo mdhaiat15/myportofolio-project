@@ -19,7 +19,7 @@ onUpdated(() => {
 			<!-- Banner left contents -->
 			<div class="w-full">
 				<h1
-					class="font-general-semibold text-3xl md:text-6xl text-center text-ternary-dark dark:text-primary-light uppercase">
+					class="font-general-semibold text-3xl md:text-6xl text-center text-ternary-dark uppercase">
 					Hi, I am Haiat
 				</h1>
 				<p class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center leading-none text-gray-400">

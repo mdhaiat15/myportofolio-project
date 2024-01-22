@@ -19,7 +19,7 @@ const bios = [
 		<div class="w-full sm:w-3/4 text-left">
 			<p class="text-indigo-600 text-2xl font-bold">Moch. Dzawil Haiat</p>
 			<p v-for="bio in bios" :key="bio.id"
-				class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-lg">
+				class="font-general-regular mb-4 text-ternary-dark  text-lg">
 				{{ bio.bio }}
 			</p><br>
 			<div class="grid grid-col-1 sm:grid-cols-2 sm:gap-4">
